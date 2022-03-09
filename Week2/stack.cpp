@@ -46,7 +46,7 @@ bool my_stack::stack_full(){
         return false;
     }
 }
-
+void show();
 int main(int argc, const char * argv[]) {
     my_stack s1;
     int list[5] = {32,123,27,131,242},i,x;
