@@ -30,23 +30,22 @@ void my_stack::push(int num){
 int my_stack::pop(){
     return this->s[top--];
 }
-bool my_stack::stack_empty(){
-    if(this->s[top]==-1){
+bool my_stack::stack_empty(){ // pop과 함께 사용
+    if(this->top==-1){
         return true;
     }
     else{
         return false;
     }
 }
-bool my_stack::stack_full(){
-    if(this->s[top]>=SIZE-1){
+bool my_stack::stack_full(){ // push와 함께 사용
+    if(this->top>=SIZE-1){
         return true;
     }
     else{
         return false;
     }
 }
-void show();
 int main(int argc, const char * argv[]) {
     my_stack s1;
     int list[5] = {32,123,27,131,242},i,x;
