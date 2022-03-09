@@ -39,7 +39,7 @@ bool my_stack::stack_empty(){ // pop과 함께 사용
     }
 }
 bool my_stack::stack_full(){ // push와 함께 사용
-    if(this->top>=SIZE-1){
+    if(this->top==SIZE-1){
         return true;
     }
     else{
