@@ -102,8 +102,11 @@ string infixToPostfix(string input){
 }
 int main(int argc, const char * argv[]) {
     string input, output;
+    char buff[100];
     cout<<"Input an infix expression to convert: ";
-    cin>>input;
+    cin.getline(buff, 80);
+    input = buff;
+    input.erase(remove(input.begin(),input.end(),' '),input.end());
     output = infixToPostfix(input);
    
     cout << output<<"\n";
