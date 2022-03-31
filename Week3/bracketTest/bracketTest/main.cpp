@@ -46,7 +46,7 @@ bool bracketTest(string input){
         }
         else if(input[i] ==')' ||input[i] == '}'||input[i] == ']'){
             if(s.empty()) {
-                cout<<"Error: An extra parenthesis '"<< input[i] <<"' is found.(닫는 괄호 부족)\n";
+                cout<<"Error: An extra parenthesis '"<< input[i] <<"' is found.(여는 괄호 부족)\n";
                 return false;
             }
             check = s.pop();
@@ -74,10 +74,7 @@ bool bracketTest(string input){
 
 int main(int argc, const char * argv[]) {
     string input;
-    
-    
-    char buff[100];
-    cin.getline(buff, 80);
+    char buff[100];     cin.getline(buff, 80);
     input = buff;
     input.erase(remove(input.begin(),input.end(),' '),input.end());//공백을 지워주는 코드
     //cout<<input<<"\n";
