@@ -69,7 +69,6 @@ bool my_queue::queue_empty(){
     }
     return false;
 }
-
 int main(int argc, const char * argv[]) {
     my_queue a;
     node tmp;
