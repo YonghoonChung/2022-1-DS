@@ -175,9 +175,8 @@ int delete_node(element a[], int troot, string tname, int n){
     else{
         if(delete_node(a, troot*2, tname, n) == 1)
             return 1;
-        else {
+        else
             return delete_node(a, troot*2+1, tname, n);
-        }
     }
 }
 
